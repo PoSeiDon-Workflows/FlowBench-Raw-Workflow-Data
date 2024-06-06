@@ -26,10 +26,10 @@ To generate the parsed data invoke the the following command:
 bash run_parser.sh
 ```
 
-To parser depends on **Docker** and **Docker Compose**, since elasticsearch runs in a container. Total space requirement on disk is 50GB.<br>
+To parser depends on **Docker** and **Docker Compose**, since elasticsearch runs in a container. Total space requirement on disk is 300GB.<br>
 `run_parser.sh` untars the tar.xz files, creates a python environment with the needed packages, starts up the elasticsearch instance and goes through the workflow submit directories 
 to generated the parsed data. The parsed data will be saved in the ./output folder. For a detailed description of the events and logs please refer to [Pegasus' Documentation](https://pegasus.isi.edu/documentation/reference-guide/monitoring.html?highlight=events).
 
 <p align="center">
-<img src="../images/raw_data_to_parsed_data.png" alt="Parsing the raw logs" width="600" height="auto"/>
+<img src="images/raw_data_to_parsed_data.png" alt="Parsing the raw logs" width="600" height="auto"/>
 </p>
