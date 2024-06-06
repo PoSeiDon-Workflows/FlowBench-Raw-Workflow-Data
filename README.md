@@ -1,9 +1,14 @@
-# Raw Data
+# FlowBench Raw Data Archive
 
-To generate the raw logs, we provisioned resources at the [NSF Chameleon Cloud](https://www.chameleoncloud.org/). We provisioned 4 Cascade Lake bare-metal nodes (48 Cores and 192GB RAM), where 1 had the role of submit node and 3 had the role of Docker container executor nodes. The container executor nodes were located within the same Chameleon region (Texas Advanced Computing Center - TACC), while the submit node was located at the University of Chicago region, and the connectivity between the two regions was established over a high-speed layer 2 VLAN (10 Gbps). 
+To generate the raw logs, we provisioned resources at the [NSF Chameleon Cloud](https://www.chameleoncloud.org/) 
+and the [FABRIC Testbed](https://fabric-testbed.org/). We provisioned 4 VMs (16 Cores and 32GB RAM) on FABRIC and 3 Cascade
+Lake bare-metal nodes (48 Cores and 192GB RAM) on Chameleon. In FABRIC 1 had the role of submit node, 1 had the role of data node
+and 2 were responsible for network QoS to the workers (StarLight location). In Chameleon all nodes were Docker container executor
+nodes [Docker Inc., 2022] located in the same region (University of Chicago - UC). The connectivity between the two testbeds/regions
+was established over a high-speed layer 2 VLAN (25 Gbps)
 
 <p align="center">
-<img src="../images/chameleon_deployment.png" alt="Chameleon deployment" width="500" height="auto"/>
+<img src="images/poseidon-deployment.png" alt="Chameleon deployment" width="500" height="auto"/>
 </p>
 
 In the raw data you can find:
