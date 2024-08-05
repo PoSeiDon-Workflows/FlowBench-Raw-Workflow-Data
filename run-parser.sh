@@ -26,10 +26,10 @@ sleep 60
 
 #create the python environment for the parser
 echo "Creating python environment..."
-python3 -m venv parser-pyenv
+python3 -m venv flowbench-parser-pyenv
 
-#enable the pythone environment
-source parser-pyenv/bin/activate
+#enable the python environment
+source flowbench-parser-pyenv/bin/activate
 
 #install dependencies
 python3 -m pip install --upgrade pip

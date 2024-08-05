@@ -824,19 +824,19 @@ if __name__ == "__main__":
 
     experiments_log = pd.read_csv("experiments.csv")
     workflow_list = {
-        "1000-genome": {"submit_dir": "workflow-submit-dirs/1000genome-workflow/submit/poseidon/pegasus"},
+        "1000genome": {"submit_dir": "workflow-submit-dirs/1000genome-workflow/submit/poseidon/pegasus"},
         "montage": {"submit_dir": "workflow-submit-dirs/montage-workflow-v3/submit/poseidon/pegasus"},
-        "predict-future-sales": {"submit_dir": "workflow-submit-dirs/predict-future-sales-workflow/submit/poseidon/pegasus"}
-        "casa-wind-full": {"submit_dir": "workflow-submit-dirs/casa-wind-workflow-full/submit/poseidon/pegasus"}
-        "casa-nowcast-full": {"submit_dir": "workflow-submit-dirs/casa-nowcast-workflow-full/submit/poseidon/pegasus"}
-        "casa-nowcast-small": {"submit_dir": "workflow-submit-dirs/casa-nowacast-workflow-small/submit/poseidon/pegasus"}
-        "variant-calling": {"submit_dir": "workflow-submit-dirs/variant-calling-workflow/submit/poseidon/pegasus"}
-        "pycbc-inference": {"submit_dir": "workflow-submit-dirs/pycbc-inference-workflow/submit/poseidon/pegasus"}
-        "pycbc-search": {"submit_dir": "workflow-submit-dirs/pycbc-search-workflow/submit/poseidon/pegasus"}
-        "somospie": {"submit_dir": "workflow-submit-dirs/somospie-workflow/submit/poseidon/pegasus"}
-        "eht-difmap": {"submit_dir": "workflow-submit-dirs/eht-difmap-workflow/submit/poseidon/pegasus"}
-        "eht-smili": {"submit_dir": "workflow-submit-dirs/eht-smili-workflow/submit/poseidon/pegasus"}
-        "eht-imaging": {"submit_dir": "workflow-submit-dirs/eht-imaging-workflow/submit/poseidon/pegasus"}
+        "predict-future-sales": {"submit_dir": "workflow-submit-dirs/predict-future-sales-workflow/submit/poseidon/pegasus"},
+        "casa-wind-full": {"submit_dir": "workflow-submit-dirs/casa-wind-full-workflow/submit/poseidon/pegasus"},
+        "casa-nowcast-full": {"submit_dir": "workflow-submit-dirs/casa-nowcast-full-workflow/submit/poseidon/pegasus"},
+        "casa-nowcast-small": {"submit_dir": "workflow-submit-dirs/casa-nowcast-small-workflow/submit/poseidon/pegasus"},
+        "variant-calling": {"submit_dir": "workflow-submit-dirs/variant-calling-workflow/submit/poseidon/pegasus"},
+        "pycbc-inference": {"submit_dir": "workflow-submit-dirs/pycbc-inference-workflow/submit/poseidon/pegasus"},
+        "pycbc-search": {"submit_dir": "workflow-submit-dirs/pycbc-search-workflow/submit/poseidon/pegasus"},
+        "somospie": {"submit_dir": "workflow-submit-dirs/somospie-workflow/submit/poseidon/pegasus"},
+        "eht-difmap": {"submit_dir": "workflow-submit-dirs/eht-difmap-workflow/submit/poseidon/pegasus"},
+        "eht-smili": {"submit_dir": "workflow-submit-dirs/eht-smili-workflow/submit/poseidon/pegasus"},
+        "eht-imaging": {"submit_dir": "workflow-submit-dirs/eht-imaging-workflow/submit/poseidon/pegasus"},
     }
 
     stats = Statistics(experiments_log, workflow_list)
