@@ -45,3 +45,4 @@ deactivate
 
 #stop and remove the elasticsearch container
 docker-compose down
+
